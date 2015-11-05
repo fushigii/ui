@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello Angular JS</title>
+    <link rel="stylesheet" href="css/angular-bootstrap.css" media="screen" title="no title" charset="utf-8"/>
+    <style type="text/css">
+     [ng\:cloak], [ng-cloak], .ng-cloak {
+       display: none !important;
+     }
+    </style>
+  </head>
+  <body ng-app="hello">
+    <div class="container">
+      <h1>Greetings</h1>
+      <div ng-controller="home" bg-cloack class="ng-cloak">
+        <p>The id is: {{greeting.id}}</p>
+        <p>The content is: {{greeting.content}}</p>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/angular-bootstrap.js"></script>
+    <script type="text/javascript" src="js/hello.js"></script>
+  </body>
+</html>
